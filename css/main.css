@@ -1,0 +1,72 @@
+body, html{
+    height: 100%;
+}
+
+/* Edit Bootstrap elements Start */
+.navbar-default {
+    background-color: transparent;
+    border: none;
+}
+
+.navbar-default .navbar-nav>li>a, .navbar-default .navbar-brand {
+    color: #fff;
+}
+
+.navbar-default .navbar-nav>li>a:focus, .navbar-default .navbar-nav>li>a:hover,
+.navbar-default .navbar-brand:focus, .navbar-default .navbar-brand:hover {
+    color: #eaeaea;
+    background-color: transparent;
+}
+/* Edit Bootstrap elements End */
+
+
+
+
+
+
+/* Cover page start */
+
+section.home-cover {
+    background-image: url(../img/cover.jpg);
+    background-size: cover;
+    height: 100%;
+    color: #fff;
+}
+section.home-cover .overlay {
+    background: rgba(7, 104, 159, .4);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+section.home-cover .cover-description {
+    position: absolute;
+    top: 20%;
+    padding: 20px 30px;
+    margin-left: 3%;
+
+}
+
+
+section.home-cover .cover-description h1 {
+    color: #f47c7c;
+}
+
+section.home-cover .cover-description p {
+    color: #eaeaea;
+    width: 60%;
+}
+/* Cover page end */
+
+
+
+
+
+
+/* Responsive design start */
+
+@media (max-width: 768px) {
+section.home-cover .cover-description p {
+    width: 98%;
+}
+
+/* Responsive design end */
