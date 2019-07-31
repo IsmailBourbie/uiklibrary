@@ -74,13 +74,27 @@ section.home-cover .cover-description p {
 
 /* Documents section Start */
 section.documents {
+    background-color: #f7f7f7;
     padding: 10px;
 }
-section.documents .section-title h2 {
+
+section .section-body {
+    margin-bottom: 60px;
+
+}
+
+
+section .section-title {
+    margin-bottom: 50px;
+    margin-top: 30px;
+}
+
+
+section .section-title h2 {
     color: #07689f;
 }
 
-section.documents .section-title hr {
+section .section-title hr {
     border: 1px solid #f47c7c;
     width: 80px;
     margin-top: 3px;    
@@ -92,7 +106,9 @@ section.documents .section-body .row{
 
 section.documents .section-body .degree-documents {
     padding: 10px 0;
-    box-shadow: 0 0 8px 0 rgba(17, 22, 26, 0.16), 0 4px 8px 0 rgba(17, 22, 26, 0.08), 0 8px 16px 0 rgba(17, 22, 26, 0.08);
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px 0 rgba(184,184,184,.5);
     margin-bottom: 20px;
 }
 section.documents .section-body h3{
@@ -117,7 +133,14 @@ section.documents .section-body .document-card:hover {
 
 /* Documents section end */
 
+/* Why Tresor section start */
 
+section.why-tresor .section-body p {
+    color: #566973;
+    font-size: 18px;
+}
+
+/* Why Tresor section End */
 
 
 /* Responsive design start */
@@ -140,4 +163,12 @@ section.documents .section-body .document-card:hover {
         color: #000000;
     }
 }
+
+
+@media (min-width: 768px) {
+    section.documents .section-body .degree-documents {
+        min-height: 292px;
+    }
+}
+
 /* Responsive design end */
