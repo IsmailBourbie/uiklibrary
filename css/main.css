@@ -14,8 +14,8 @@ body, html{
 
 .navbar-default .navbar-nav>li>a:focus, .navbar-default .navbar-nav>li>a:hover,
 .navbar-default .navbar-brand:focus, .navbar-default .navbar-brand:hover {
-    color: #eaeaea;
-    background-color: transparent;
+    color: #fff;
+    background-color: #f47c7c;
 }
 /* Edit Bootstrap elements End */
 
@@ -65,8 +65,15 @@ section.home-cover .cover-description p {
 /* Responsive design start */
 
 @media (max-width: 768px) {
-section.home-cover .cover-description p {
-    width: 98%;
+    section.home-cover .cover-description p {
+        width: 98%;
+    }
+    section.home-cover .cover-description {
+        top: 35%;
+    }
+    .navbar-nav .open .dropdown-menu {
+    
+        background-color: #fff;
+    }
 }
-
 /* Responsive design end */
