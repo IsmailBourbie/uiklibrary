@@ -31,6 +31,7 @@ section.home-cover {
     background-size: cover;
     height: 100%;
     color: #fff;
+    background-position: bottom center;
 }
 section.home-cover .overlay {
     background: rgba(7, 104, 159, .4);
@@ -57,7 +58,48 @@ section.home-cover .cover-description p {
 }
 /* Cover page end */
 
+/* Documents section Start */
+section.documents {
+    padding: 10px;
+}
+section.documents .section-title h2 {
+    color: #07689f;
+}
 
+section.documents .section-title hr {
+    border: 1px solid #f47c7c;
+    width: 80px;
+    margin-top: 3px;    
+}
+
+section.documents .section-body .row{
+    margin: 0px;
+}
+
+section.documents .section-body .degree-documents {
+    padding: 10px 0;
+    box-shadow: 0 0 8px 0 rgba(17, 22, 26, 0.16), 0 4px 8px 0 rgba(17, 22, 26, 0.08), 0 8px 16px 0 rgba(17, 22, 26, 0.08);
+}
+section.documents .section-body h3{
+    color: #f47c7c;
+}
+
+section.documents .section-body .document-card {
+    padding: 20px;
+    margin: 0 auto 10px;
+    width: 130px;
+    border: 1px solid #a2d5f2;
+    border-radius: 10px;
+
+}
+section.documents .section-body .document-card:hover {
+    box-shadow: 0 0 8px 0 rgba(17, 22, 26, 0.16), 0 4px 8px 0 rgba(17, 22, 26, 0.08), 0 8px 16px 0 rgba(17, 22, 26, 0.08);
+    cursor: pointer;
+
+}
+
+
+/* Documents section end */
 
 
 
