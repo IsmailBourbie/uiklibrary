@@ -107,45 +107,45 @@
         <div class="section-body">
             <div class="row text-center">
                 <div class="col-lg-6">
-                    <div class="licence-documents degree-documents">
+                    <div class="container-documents">
                         <h3>LICENCE:</h3>
-                        <div class="row">
-                            <div class="col-lg-6 col-xs-6">
-                                <div class="document-card">Semester 01</div>
+                        <div class="row degree-documents" data-degree="0">
+                            <div class="col-lg-6 col-xs-6 document-card">
+                                <button class="show-modal" data-toggle="modal" data-target="#semester-files" data-semester="1" >Semester 01</button>
                             </div>
-                            <div class="col-lg-6 col-xs-6">
-                                <div class="document-card">Semester 02</div>
+                            <div class="col-lg-6 col-xs-6 document-card">
+                                <button class="show-modal" data-toggle="modal" data-target="#semester-files" data-semester="2" >Semester 02</button>
                             </div>
-                            <div class="col-lg-6 col-xs-6">
-                                <div class="document-card">Semester 03</div>
+                            <div class="col-lg-6 col-xs-6 document-card">
+                                <button class="show-modal" data-toggle="modal" data-target="#semester-files" data-semester="3" >Semester 03</button>
                             </div>
-                            <div class="col-lg-6 col-xs-6">
-                                <div class="document-card">Semester 04</div>
+                            <div class="col-lg-6 col-xs-6 document-card">
+                                <button class="show-modal" data-toggle="modal" data-target="#semester-files" data-semester="4" >Semester 04</button>
                             </div>
-                            <div class="col-lg-6 col-xs-6">
-                                <div class="document-card">Semester 05</div>
+                            <div class="col-lg-6 col-xs-6 document-card">
+                                <button class="show-modal" data-toggle="modal" data-target="#semester-files" data-semester="5" >Semester 05</button>
                             </div>
-                            <div class="col-lg-6 col-xs-6">
-                                <div class="document-card">Semester 06</div>
+                            <div class="col-lg-6 col-xs-6 document-card">
+                                <button class="show-modal" data-toggle="modal" data-target="#semester-files" data-semester="5" >Semester 06</button>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-6">
-                    <div class="master-documents degree-documents">
+                    <div class="container-documents">
                         <h3>MASTER:</h3>
-                        <div class="row">
-                            <div class="col-lg-6 col-xs-6">
-                                <div class="document-card">Semester 01</div>
+                        <div class="row degree-documents" data-degree="1">
+                            <div class="col-lg-6 col-xs-6 document-card">
+                                <button class="show-modal" data-toggle="modal" data-target="#semester-files" data-semester="1" >Semester 01</button>
                             </div>
-                            <div class="col-lg-6 col-xs-6">
-                                <div class="document-card">Semester 02</div>
+                            <div class="col-lg-6 col-xs-6 document-card">
+                                <button class="show-modal" data-toggle="modal" data-target="#semester-files" data-semester="2" >Semester 02</button>
                             </div>
-                            <div class="col-lg-6 col-xs-6">
-                                <div class="document-card">Semester 03</div>
+                            <div class="col-lg-6 col-xs-6 document-card">
+                                <button class="show-modal" data-toggle="modal" data-target="#semester-files" data-semester="3" >Semester 03</button>
                             </div>
-                            <div class="col-lg-6 col-xs-6">
-                                <div class="document-card">Semester 04</div>
+                            <div class="col-lg-6 col-xs-6 document-card">
+                                <button class="show-modal" data-toggle="modal" data-target="#semester-files" data-semester="4" >Semester 04</button>
                             </div>
                         </div>
                     </div>
@@ -154,8 +154,24 @@
         </div>
     </section>
     <!-- Documents Section End -->
-
-
+      
+      <!-- Modal -->
+      <div class="modal fade" id="semester-files" tabindex="-1" role="dialog" aria-labelledby="semester-filesLabel">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+              <h4 class="modal-title" id="semester-filesLabel">Modal title</h4>
+            </div>
+            <div class="modal-body">
+              ...
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
     <script src="js/jquery-1.12.1.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/plugins.js"></script>

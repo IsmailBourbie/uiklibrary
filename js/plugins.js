@@ -7,7 +7,10 @@ $(document).ready(function(){
             navbarElemetn.addClass("navbar-scrolled");
         } else {
             navbarElemetn.removeClass("navbar-scrolled");
-        }
-        
+        }        
+    });
+
+    $('.show-modal').click(function(){
+        alert('hello in my modal');
     });
 });
