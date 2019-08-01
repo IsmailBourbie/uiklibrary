@@ -4,8 +4,10 @@ body, html{
 
 /* Edit Bootstrap elements Start */
 .navbar-default {
+    transition: all .5s;
     background-color: transparent;
     border: none;
+    padding: 8px;
 }
 
 .navbar-default .navbar-nav>li>a, .navbar-default .navbar-brand {
@@ -30,6 +32,14 @@ body, html{
 
 .navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
     border-color: #f47c7c;
+}
+
+
+.navbar-scrolled {
+    transition: all .5s;
+    background-color: #07689f;
+    padding: 4px;
+    border-bottom: 1px solid #07496f;
 }
 /* Edit Bootstrap elements End */
 
