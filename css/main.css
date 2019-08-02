@@ -41,6 +41,11 @@ body, html{
     padding: 4px;
     border-bottom: 1px solid #07496f;
 }
+
+
+.modal-body .table-responsive {
+    max-height: 400px;
+}
 /* Edit Bootstrap elements End */
 
 
@@ -173,6 +178,12 @@ section.why-tresor .section-body p {
     }
     .navbar-default .navbar-nav>li>a {
         color: #000000;
+    }
+
+
+        
+    .modal-body .table-responsive {
+        /* max-height: 280px; */
     }
 }
 
