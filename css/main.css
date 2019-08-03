@@ -43,7 +43,7 @@ body, html{
 }
 
 
-.modal-body .table-responsive {
+#semester-files .modal-body .table-responsive {
     max-height: 400px;
 }
 /* Edit Bootstrap elements End */
@@ -144,7 +144,10 @@ section.documents .section-body .document-card button:hover {
     box-shadow: 0 0 8px 0 rgba(17, 22, 26, 0.16), 0 4px 8px 0 rgba(17, 22, 26, 0.08), 0 8px 16px 0 rgba(17, 22, 26, 0.08);
     cursor: pointer;
     transition: box-shadow .3s;
+}
 
+section.documents .section-body .document-card button:focus {
+    outline: none;
 }
 
 
@@ -158,6 +161,13 @@ section.why-tresor .section-body p {
 }
 
 /* Why Tresor section End */
+
+/* Modules Tables Start */
+
+#semester-files .modal-body table tbody tr:hover {
+    cursor: pointer;
+}
+/* Modules Tables End */
 
 
 /* Responsive design start */
@@ -182,8 +192,9 @@ section.why-tresor .section-body p {
 
 
         
-    .modal-body .table-responsive {
-        /* max-height: 280px; */
+    #semester-files .modal-body .table-responsive {
+        max-height: 350px;
+        overflow-y: scroll;
     }
 }
 

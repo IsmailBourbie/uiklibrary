@@ -1,32 +1,41 @@
+/**** Description of files ****/
+/** Licence:
+ *** keys: semester number for exemple the first semester of the first year is 1 and the the second semester of the third year is 5 and so on
+ *** values: an array of objects (modules) that's contains a description of module, for each module there is:
+ ***    - url: (String: url) the url of google drive folder (PS: must be the full url including https)
+ ***    - name: (String) name of modules 
+ ***    - Course, td tp: (Boolean) represent if the module has course, td and tp;
+ */
+
 const LICENCE = {
     1: [
         {
             "url": "#",
             "name": "Algorithms",
-            "course": 1,
-            "td": 1,
-            "tp": 1,
+            "course": true,
+            "td": true,
+            "tp": true,
         },
         {
             "url": "#",
             "name": "Bureautique",
-            "course": 0,
-            "td": 0,
-            "tp": 1,
+            "course": false,
+            "td": false,
+            "tp": true,
         },
         {
             "url": "#",
             "name": "Analyse",
-            "course": 1,
-            "td": 1,
-            "tp": 0,
+            "course": true,
+            "td": true,
+            "tp": false,
         },
         {
             "url": "#",
             "name": "Anglais",
-            "course": 1,
-            "td": 0,
-            "tp": 0,
+            "course": true,
+            "td": false,
+            "tp": false,
         }
     ],
     2: [
@@ -39,7 +48,22 @@ const LICENCE = {
 },
     MASTER = {
         1: [],
-        2: [],
+        2: [
+            {
+                "url": "#",
+                "name": "Specification et conception des logiciels",
+                "course": true,
+                "td": true,
+                "tp": false,
+            },
+            {
+                "url": "#",
+                "name": "Validation formelle des systemes informtique",
+                "course": true,
+                "td": true,
+                "tp": true,
+            }
+        ],
         3: [],
         4: [],
     };        
