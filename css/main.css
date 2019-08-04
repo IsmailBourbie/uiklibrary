@@ -143,12 +143,15 @@ section.documents .section-body .container-documents .document-card {
     padding: 20px;
     position: relative;    
 }
-
-section.documents .section-body .container-documents .document-card div{
+section.documents .section-body .container-documents .document-card > div,
+section.documents .section-body .container-documents .document-card > ul {
     width: 80%;
-    padding: 13px;
     margin: auto;
-    background: #07496f;
+
+}
+section.documents .section-body .container-documents .document-card div{
+    padding: 13px;
+    background: #07689f;
     border: 1px solid #4b626f;
     color: #fff;
     font-weight: bold;
@@ -160,8 +163,6 @@ section.documents .section-body .container-documents .document-card div h4 {
 
 section.documents .section-body .container-documents .document-card ul {
     padding: 20px 10px;
-    width: 80%;
-    margin: auto;
     margin-top: 7px;
     box-shadow: 0 2px 4px 0 rgba(184,184,184,.5);
     background: #fff;
@@ -238,6 +239,11 @@ section.why-tresor .section-body p {
     #semester-files .modal-body .table-responsive {
         max-height: 350px;
         overflow-y: scroll;
+    }
+
+    section.documents .section-body .container-documents .document-card > div,
+    section.documents .section-body .container-documents .document-card > ul {
+        width: 100%;
     }
 }
 

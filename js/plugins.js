@@ -1,13 +1,21 @@
 $(document).ready(function(){
 
+    // on reload page check the scroll
+    if($(window).scrollTop() >= 100) {
+        $("nav.navbar").addClass("navbar-scrolled");
+    } else {            
+        $("nav.navbar").removeClass("navbar-scrolled");
+    }
+
+
     // On scroll show the nav bar
     $(window).on('scroll', function() {
-        var navbarElemetn = $("nav.navbar");
+        let navbarElement = $("nav.navbar");
         if($(this).scrollTop() >= 100) {
-            navbarElemetn.addClass("navbar-scrolled");
-        } else {
-            navbarElemetn.removeClass("navbar-scrolled");
-        }        
+            navbarElement.addClass("navbar-scrolled");
+        } else {            
+            navbarElement.removeClass("navbar-scrolled");
+        }
     });
 
     $('.show-modal').click(function(){
