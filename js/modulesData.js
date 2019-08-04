@@ -49,25 +49,27 @@ const LICENCE = {
     }    
 },
     MASTER = {
-        1: [],
-        2: [
-            {
-                "url": "#",
-                "name": "Specification et conception des logiciels",
-                "course": true,
-                "td": true,
-                "tp": false,
-            },
-            {
-                "url": "#",
-                "name": "Validation formelle des systemes informtique",
-                "course": true,
-                "td": true,
-                "tp": true,
-            }
-        ],
-        3: [],
-        4: [],
+        "GL" : {
+            1: [],
+            2: [
+                {
+                    "url": "#",
+                    "name": "Specification et conception des logiciels",
+                    "course": true,
+                    "td": true,
+                    "tp": false,
+                },
+                {
+                    "url": "#",
+                    "name": "Validation formelle des systemes informtique",
+                    "course": true,
+                    "td": true,
+                    "tp": true,
+                }
+            ],
+            3: [],
+            4: [],
+        }
     };        
 
 function getDegreeData(n) {

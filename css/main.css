@@ -76,7 +76,23 @@ section.home-cover .cover-description {
 
 }
 
+#semester-files .modal-header {
+    background: #07689f;
+}
 
+#semester-files .modal-header .modal-title{
+    color: #fff;
+    text-align: center;
+}
+#semester-files .modal-header .close{
+    color: #d43f3a;
+    opacity: .8;
+    text-shadow: 0 1px 0 #d43f3a;
+ }
+ 
+#semester-files .modal-header .close:hover {
+    opacity: 1;
+ }
 section.home-cover .cover-description h1 {
     color: #f47c7c;
 }
@@ -132,11 +148,11 @@ section.documents .section-body .container-documents .document-card div{
     width: 80%;
     padding: 13px;
     margin: auto;
-    background: #f47c7c;
-    border: 1px solid #c77070;
-    color: #07496f;
+    background: #07496f;
+    border: 1px solid #4b626f;
+    color: #fff;
     font-weight: bold;
-    border-radius: 7px 21px 0 0px;
+    border-radius: 7px 30px 0 0px;
 }
 section.documents .section-body .container-documents .document-card div h4 {
     margin: 4px;
@@ -159,7 +175,7 @@ section.documents .section-body .container-documents .document-card ul li button
     border: none;
 }
 section.documents .section-body .container-documents .document-card ul li button:hover  {
-    border-left: 2px solid #07689f;
+    border-left: 2px solid #f47c7c;
     transition: transform .3s ease-in-out;
     transform: translateX(5px);
 

@@ -12,16 +12,20 @@ $(document).ready(function(){
 
     $('.show-modal').click(function(){
         let modalTitle = $('.modal-title'),
+            cardTitle = $(this).parents('ul').siblings('.card-title').children("h4").html(),
+            semesterTitle = $(this).text().trim(),
             tableBody = $('.modal-body table tbody'),
+            selectedSpeciality = $(this).parents('.document-card').attr('data-speciality'),
             selectedDegree = $(this).parents('.degree-documents').attr('data-degree'),
             selectedSemester = $(this).attr('data-semester');
 
             // Change the title of the modal ddepending on the degree and the semester
-            modalTitle.text(getDegreeName(selectedDegree) + ': Semester 0' + selectedSemester);
+            modalTitle.html(cardTitle + ' - ' + semesterTitle);
             // get data from moduleData file
             let dataDegree = getDegreeData(selectedDegree),
-                dataSemester = dataDegree[selectedSemester];
-
+                dataSpeciality = dataDegree[selectedSpeciality],
+                dataSemester = dataSpeciality[selectedSemester];
+            console.log(cardTitle);
             tableBody.empty(); // empty the table before appending any rows
 
             // foreach modules of semester append the data to the table
