@@ -8,43 +8,45 @@
  */
 
 const LICENCE = {
-    1: [
-        {
-            "url": "#",
-            "name": "Algorithms",
-            "course": true,
-            "td": true,
-            "tp": true,
-        },
-        {
-            "url": "#",
-            "name": "Bureautique",
-            "course": false,
-            "td": false,
-            "tp": true,
-        },
-        {
-            "url": "#",
-            "name": "Analyse",
-            "course": true,
-            "td": true,
-            "tp": false,
-        },
-        {
-            "url": "#",
-            "name": "Anglais",
-            "course": true,
-            "td": false,
-            "tp": false,
-        }
-    ],
-    2: [
-        // Here you add module as the first semester
-    ],
-    3: [],
-    4: [],
-    5: [],
-    6: [],
+    "SI" : {
+        1: [
+            {
+                "url": "#",
+                "name": "Algorithms",
+                "course": true,
+                "td": true,
+                "tp": true,
+            },
+            {
+                "url": "#",
+                "name": "Bureautique",
+                "course": false,
+                "td": false,
+                "tp": true,
+            },
+            {
+                "url": "#",
+                "name": "Analyse",
+                "course": true,
+                "td": true,
+                "tp": false,
+            },
+            {
+                "url": "#",
+                "name": "Anglais",
+                "course": true,
+                "td": false,
+                "tp": false,
+            }
+        ],
+        2: [
+            // Here you add module as the first semester
+        ],
+        3: [],
+        4: [],
+        5: [],
+        6: []
+    }    
 },
     MASTER = {
         1: [],

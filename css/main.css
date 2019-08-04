@@ -120,35 +120,62 @@ section.documents .section-body .row{
 }
 
 section.documents .section-body .container-documents {
+    /* background: red; */
+}
+
+section.documents .section-body .container-documents .document-card {
+    padding: 20px;
+    position: relative;    
+}
+
+section.documents .section-body .container-documents .document-card div{
+    width: 80%;
+    padding: 13px;
+    margin: auto;
+    background: #f47c7c;
+    border: 1px solid #c77070;
+    color: #07496f;
+    font-weight: bold;
+    border-radius: 7px 21px 0 0px;
+}
+section.documents .section-body .container-documents .document-card div h4 {
+    margin: 4px;
+}
+
+section.documents .section-body .container-documents .document-card ul {
+    padding: 20px 10px;
+    width: 80%;
+    margin: auto;
+    margin-top: 7px;
+    box-shadow: 0 2px 4px 0 rgba(184,184,184,.5);
+    background: #fff;
+    border-radius: 0 0 7px 7px;
+}
+section.documents .section-body .container-documents .document-card ul li button {
+    padding: 10px;
+    width: 100%;
+    background: inherit;
+    text-align: left;
+    border: none;
+}
+section.documents .section-body .container-documents .document-card ul li button:hover  {
+    border-left: 2px solid #07689f;
+    transition: transform .3s ease-in-out;
+    transform: translateX(5px);
+
+}
+section.documents .section-body .container-documents .document-card ul li button:focus {
+    outline: none;
+}
+
+/* section.documents .section-body .container-documents {
     padding: 10px 0;
     border-radius: 8px;
     background-color: #fff;
     box-shadow: 0 2px 4px 0 rgba(184,184,184,.5);
     margin-bottom: 20px;
-}
-section.documents .section-body h3{
-    color: #f47c7c;
-    margin: 10px auto 20px;
-}
+} */
 
-section.documents .section-body .document-card button {
-    background: transparent;
-    padding: 20px;
-    margin: 0 auto 10px;
-    width: 130px;
-    border: 1px solid #a2d5f2;
-    border-radius: 10px;
-
-}
-section.documents .section-body .document-card button:hover {
-    box-shadow: 0 0 8px 0 rgba(17, 22, 26, 0.16), 0 4px 8px 0 rgba(17, 22, 26, 0.08), 0 8px 16px 0 rgba(17, 22, 26, 0.08);
-    cursor: pointer;
-    transition: box-shadow .3s;
-}
-
-section.documents .section-body .document-card button:focus {
-    outline: none;
-}
 
 
 /* Documents section end */
