@@ -126,74 +126,66 @@ section .section-title h2 {
 }
 
 section .section-title hr {
-    border: 1px solid #f47c7c;
+    border: 1px solid #9c2323;
     width: 80px;
     margin-top: 3px;    
 }
 
-section.documents .section-body .row{
+section.documents .section-body .row {
     margin: 0px;
 }
 
-section.documents .section-body .container-documents {
-    /* background: red; */
+section.documents .section-body .row .documents-details {
+    padding: 5px;
 }
 
-section.documents .section-body .container-documents .document-card {
-    padding: 20px;
-    position: relative;    
-}
-section.documents .section-body .container-documents .document-card > div,
-section.documents .section-body .container-documents .document-card > ul {
+section.documents .section-body .row .documents-details .footer select{
+    background-color: #f47c7c;
     width: 80%;
-    margin: auto;
-
-}
-section.documents .section-body .container-documents .document-card div{
-    padding: 13px;
-    background: #07689f;
-    border: 1px solid #4b626f;
-    color: #fff;
+    border: 1px solid #c56464;
     font-weight: bold;
-    border-radius: 7px 30px 0 0px;
-}
-section.documents .section-body .container-documents .document-card div h4 {
-    margin: 4px;
-}
-
-section.documents .section-body .container-documents .document-card ul {
-    padding: 20px 10px;
-    margin-top: 7px;
-    box-shadow: 0 2px 4px 0 rgba(184,184,184,.5);
-    background: #fff;
-    border-radius: 0 0 7px 7px;
-}
-section.documents .section-body .container-documents .document-card ul li button {
     padding: 10px;
-    width: 100%;
-    background: inherit;
-    text-align: left;
-    border: none;
 }
-section.documents .section-body .container-documents .document-card ul li button:hover  {
-    border-left: 2px solid #f47c7c;
-    transition: transform .3s ease-in-out;
-    transform: translateX(5px);
-
-}
-section.documents .section-body .container-documents .document-card ul li button:focus {
+section.documents .section-body .row .documents-details .footer select:focus{
     outline: none;
 }
 
-/* section.documents .section-body .container-documents {
-    padding: 10px 0;
+section.documents .documents-table{
+    padding: 20px 10px;
+    box-shadow: 5px 5px 25px 0px rgba(46, 61, 73, 0.2);
     border-radius: 8px;
-    background-color: #fff;
-    box-shadow: 0 2px 4px 0 rgba(184,184,184,.5);
-    margin-bottom: 20px;
-} */
+}
+section.documents .documents-table .header .row {
+    width: 80%;
+    margin: auto;
+    border: 1px solid #D6D8DA;
+    border-radius: 5px;
+    overflow: hidden;
+}
 
+section.documents .documents-table .header .row > div{
+    padding: 0%;
+}
 
+section.documents .documents-table .header .row button {
+    width: 100%;
+    background: transparent;
+    padding: 10px 8px;
+    border: none;    
+}
+
+section.documents .documents-table .header .row button:hover {
+    color: #fff;
+    background-color: #1385c5;
+}
+section.documents .documents-table .header .row button.selected {
+    color: #fff;
+    background-color: #07689f;
+}
+
+section.documents .documents-table table tbody {
+    text-align: left;
+}
 
 /* Documents section end */
 
