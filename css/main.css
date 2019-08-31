@@ -13,34 +13,42 @@ body, html{
 
 .navbar-default .navbar-nav>li>a, .navbar-default .navbar-brand {
     color: #fff;
+    text-transform: uppercase;
+    font-weight: bold;
+    
 }
 
 .navbar-default .navbar-nav>li>a:focus, .navbar-default .navbar-nav>li>a:hover,
 .navbar-default .navbar-brand:focus, .navbar-default .navbar-brand:hover {
     color: #fff;
-    background-color: #f47c7c;
+    background-color: #FF5E3E;
+}
+.navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:focus,
+.navbar-default .navbar-nav>.open>a:hover {
+    color: #fff;
+    background-color: #FF5E3E;
 }
 .navbar-default .navbar-toggle .icon-bar {
     background-color: #fff;   
 }
 
 .navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
-    background-color: #f47c7c;
+    background-color: #FF5E3E;
 }
 .navbar-default .navbar-toggle {
     border-color: #fff;
 }
 
 .navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
-    border-color: #f47c7c;
+    border-color: #FF5E3E;
 }
 
 
 .navbar-scrolled {
     transition: all .5s;
-    background-color: #07689f;
-    padding: 4px;
-    border-bottom: 1px solid #07496f;
+    background-color: #00CCCC;
+    padding: 0;
+    border-bottom: 1px solid #009999;
 }
 
 
@@ -76,26 +84,8 @@ section.home-cover .cover-description {
     margin-left: 3%;
 
 }
-
-#semester-files .modal-header {
-    background: #07689f;
-}
-
-#semester-files .modal-header .modal-title{
-    color: #fff;
-    text-align: center;
-}
-#semester-files .modal-header .close{
-    color: #d43f3a;
-    opacity: .8;
-    text-shadow: 0 1px 0 #d43f3a;
- }
- 
-#semester-files .modal-header .close:hover {
-    opacity: 1;
- }
 section.home-cover .cover-description h1 {
-    color: #f47c7c;
+    color: #FF5E3E;
 }
 
 section.home-cover .cover-description p {
@@ -151,9 +141,9 @@ section.documents .section-body .row .documents-details .body p {
 }
 
 section.documents .section-body .row .documents-details .footer select{
-    background-color: #07689f;
+    background-color: #00CCCC;
     width: 70%;
-    border: 1px solid #07496f;
+    border: 1px solid #009999;
     font-size: 20px;
     font-weight: bold;
     color: #FFF;
@@ -199,11 +189,21 @@ section.documents .documents-table .header .row button {
 
 section.documents .documents-table .header .row button:hover {
     color: #fff;
-    background-color: #ffa0a0;
+    background-color: #ff7154;
 }
 section.documents .documents-table .header .row button.selected {
     color: #fff;
-    background-color: #f47c7c;
+    background-color: #FF5E3E;
+}
+
+section.documents .documents-table table {
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+section.documents .documents-table table thead {
+    background: #FCCC3A;
+    box-shadow: 5px 5px 25px 0px rgba(46, 61, 73, 0.1);
 }
 
 section.documents .documents-table table tbody {
