@@ -154,10 +154,17 @@ section.documents .section-body .row .documents-details .footer select{
     background-color: #07689f;
     width: 70%;
     border: 1px solid #07496f;
+    font-size: 20px;
     font-weight: bold;
     color: #FFF;
-    padding: 15px;
+    padding: 10px;
 }
+
+section.documents .section-body .row .documents-details .footer select option{
+    background-color: #fff;
+    color: #21242c;    
+}
+
 section.documents .section-body .row .documents-details .footer select:focus{
     outline: none;
 }
