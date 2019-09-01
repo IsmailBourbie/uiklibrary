@@ -20,8 +20,7 @@ body, html{
 
 .navbar-default .navbar-nav>li>a:focus, .navbar-default .navbar-nav>li>a:hover,
 .navbar-default .navbar-brand:focus, .navbar-default .navbar-brand:hover {
-    color: #fff;
-    background-color: #FF5E3E;
+    color: #FCCC3A;
 }
 .navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:focus,
 .navbar-default .navbar-nav>.open>a:hover {
@@ -96,8 +95,9 @@ section.home-cover .cover-description p {
 
 /* Documents section Start */
 section.documents {
-    background-color: #f7f7f7;
+    background-color: #fafbfc;
     padding: 10px;
+    border: 1px solid #efefef;
 }
 
 section .section-body {
@@ -146,12 +146,12 @@ section.documents .section-body .row .documents-details .footer select{
     border: 1px solid #009999;
     font-size: 20px;
     font-weight: bold;
-    color: #FFF;
+    color: #ffffff;
     padding: 10px;
 }
 
 section.documents .section-body .row .documents-details .footer select option{
-    background-color: #fff;
+    background-color: #ffffff;
     color: #21242c;    
 }
 
@@ -161,8 +161,10 @@ section.documents .section-body .row .documents-details .footer select:focus{
 
 section.documents .documents-table{
     padding: 20px 10px;
+    background-color: #ffffff;
     box-shadow: 5px 5px 25px 0px rgba(46, 61, 73, 0.2);
     border-radius: 8px;
+    min-height: 400px;
 }
 
 section.documents .documents-table .header{
@@ -210,6 +212,10 @@ section.documents .documents-table table tbody {
     text-align: left;
 }
 
+section.documents .documents-table table tbody tr:hover {
+    cursor: pointer;
+}
+
 /* Documents section end */
 
 /* Why Tresor section start */
@@ -226,13 +232,6 @@ section.why-tresor .section-body p {
 }
 
 /* Why Tresor section End */
-
-/* Modules Tables Start */
-
-#semester-files .modal-body table tbody tr:hover {
-    cursor: pointer;
-}
-/* Modules Tables End */
 
 
 /* Responsive design start */
@@ -254,18 +253,7 @@ section.why-tresor .section-body p {
     .navbar-default .navbar-nav>li>a {
         color: #000000;
     }
-
-
         
-    #semester-files .modal-body .table-responsive {
-        max-height: 350px;
-        overflow-y: scroll;
-    }
-
-    section.documents .section-body .container-documents .document-card > div,
-    section.documents .section-body .container-documents .document-card > ul {
-        width: 100%;
-    }
 }
 
 
@@ -280,3 +268,13 @@ section.why-tresor .section-body p {
 }
 
 /* Responsive design end */
+
+
+/* Framework start */
+.true-sign {
+    color: #018131;
+}
+.false-sign {
+    color: #F52012;
+}
+/* Framework end */

@@ -7,9 +7,9 @@
  ***    - Course, td tp: (Boolean) represent if the module has course, td and tp;
  */
 
-const LICENCE = {
-    "SI" : {
-        1: [
+const LICENCE = {    
+    1: [// first year
+        [ // Semester 01
             {
                 "url": "#",
                 "name": "Algorithms",
@@ -33,20 +33,39 @@ const LICENCE = {
             },
             {
                 "url": "#",
+                "name": "Algebre",
+                "course": true,
+                "td": true,
+                "tp": false,
+            },
+            {
+                "url": "#",
+                "name": "Electronique",
+                "course": true,
+                "td": true,
+                "tp": false,
+            },
+            {
+                "url": "#",
+                "name": "Mecanique",
+                "course": true,
+                "td": true,
+                "tp": false,
+            },
+            {
+                "url": "#",
                 "name": "Anglais",
                 "course": true,
                 "td": false,
                 "tp": false,
             }
         ],
-        2: [
-            // Here you add module as the first semester
-        ],
-        3: [],
-        4: [],
-        5: [],
-        6: []
-    }    
+        [ // Semester 02
+
+        ]
+    ],
+    2: [],
+    3: []    
 },
     MASTER = {
         "GL" : {
@@ -72,13 +91,7 @@ const LICENCE = {
         }
     };        
 
-function getDegreeData(n) {
-    if (n == 0) return LICENCE;
-    else return MASTER;
-}
 
-function getDegreeName(n) {
-    if (n == 0) return "Licence";
-    else return "Master";
+function getLicenceSemester(year, semester) {
+    return LICENCE[year][semester];
 }
-
