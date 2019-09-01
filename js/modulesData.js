@@ -12,7 +12,7 @@ const LICENCE = {
         [ // Semester 01
             {
                 "url": "#",
-                "name": "Algorithms",
+                "name": "Algorithms 01",
                 "course": true,
                 "td": true,
                 "tp": true,
@@ -26,14 +26,14 @@ const LICENCE = {
             },
             {
                 "url": "#",
-                "name": "Analyse",
+                "name": "Analyse 01",
                 "course": true,
                 "td": true,
                 "tp": false,
             },
             {
                 "url": "#",
-                "name": "Algebre",
+                "name": "Algebre 01",
                 "course": true,
                 "td": true,
                 "tp": false,
@@ -60,8 +60,63 @@ const LICENCE = {
                 "tp": false,
             }
         ],
-        [ // Semester 02
-
+        [ // Semester 01
+            {
+                "url": "#",
+                "name": "Algorithms 02",
+                "course": true,
+                "td": true,
+                "tp": true,
+            },
+            {
+                "url": "#",
+                "name": "Structure Machine",
+                "course": false,
+                "td": false,
+                "tp": true,
+            },
+            {
+                "url": "#",
+                "name": "Analyse 02",
+                "course": true,
+                "td": true,
+                "tp": false,
+            },
+            {
+                "url": "#",
+                "name": "Algebre 02",
+                "course": true,
+                "td": true,
+                "tp": false,
+            },
+            {
+                "url": "#",
+                "name": "POO",
+                "course": true,
+                "td": true,
+                "tp": false,
+            },
+            {
+                "url": "#",
+                "name": "Electricité",
+                "course": true,
+                "td": true,
+                "tp": false,
+            },
+            {
+                "url": "#",
+                "name": "Tech de L'information",
+                "course": true,
+                "td": true,
+                "tp": false,
+            },
+            {
+                "url": "#",
+                "name": "Statistiques",
+                "course": true,
+                "td": false,
+                "tp": false,
+            }
         ]
     ],
     2: [],

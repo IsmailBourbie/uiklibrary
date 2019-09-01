@@ -155,10 +155,6 @@ section.documents .section-body .row .documents-details .footer select option{
     color: #21242c;    
 }
 
-section.documents .section-body .row .documents-details .footer select:focus{
-    outline: none;
-}
-
 section.documents .documents-table{
     padding: 20px 10px;
     background-color: #ffffff;
@@ -261,12 +257,19 @@ section.why-tresor .section-body p {
     section.documents .section-body .container-documents {
         min-height: 292px;
     }
+
+    section.documents .documents-table table tbody tr td:first-of-type {
+        min-width: 190px;
+    }
+}
+
+@media (min-width: 1200px) {
+
     section.documents .section-body .row .documents-details {
         padding: 35px 5px;
         text-align: left;
     }
 }
-
 /* Responsive design end */
 
 
@@ -276,5 +279,9 @@ section.why-tresor .section-body p {
 }
 .false-sign {
     color: #F52012;
+}
+button:focus, select:focus,
+button:active, select:active{
+    outline: none;
 }
 /* Framework end */

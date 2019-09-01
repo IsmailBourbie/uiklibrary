@@ -13,21 +13,36 @@ $(document).ready(function(){
         let navbarElement = $("nav.navbar");
         if($(this).scrollTop() >= 100) {
             navbarElement.addClass("navbar-scrolled");
-        } else {            
+        } else {
             navbarElement.removeClass("navbar-scrolled");
         }
     });
 
     // fill the licence table with data onload page
-    var tableBody = $(".documents-table table tbody"),
-        dataLicence01 = getLicenceSemester(1, 0);
-    for(let i in dataLicence01) {
-        tableBody.append(createTableRow(dataLicence01[i]));
-    }
+    fillTable(1, 0);
 
-    
+    // Onchange semester 
+    $('.semester-btn').click(function() {
+        let selectedSemester = $(this).attr('data-semester'),
+            selectedYear = $('select').val();
+        $('.semester-btn').removeClass('selected');
+        $(this).addClass('selected');
+
+        fillTable(selectedYear, selectedSemester);
+    });
         
     // helper function
+
+    function fillTable(year, semester) {
+        let tableBody = $(".documents-table table tbody"),
+        dataLicence = getLicenceSemester(year, semester);
+
+        tableBody.empty();
+
+        for(let i in dataLicence) {
+            tableBody.append(createTableRow(dataLicence[i]));
+        }
+    }
 
     // render an row of table
     function createTableRow(object) {
