@@ -8,6 +8,10 @@
     <title>Tresor - UIK</title>
     <link href="https://fonts.googleapis.com/css?family=Lato|Source+Serif+Pro&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/aos.css" />
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
     <link rel="stylesheet" href="css/main.css">
 </head>
 
@@ -53,9 +57,8 @@
         <div class="overlay"></div>
         <div class="cover-description">
             <h1>TRESOR UIK</h1>
-            <p class="lead">Trésor ESI" is a library of Courses, Exercises , Exams and several other documents for all
-                ESI students. "Trésor ESI" was created in October 2013 in collaboration with the Scientific Club of ESI
-                "CSE".</p>
+            <p id="type-writer" class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit
+                Ipsum odio quisquam excepturi dignissimos exercitationem inventore blanditiis ad corporis.</p>
         </div>
     </section>
     <!-- Image cover End -->
@@ -69,21 +72,21 @@
         <div class="section-body">
             <div class="container">
                 <div class="row text-center">
-                    <div class="col-lg-4 col-xs-12">
+                    <div class="col-lg-4 col-xs-12" data-aos="fade-right" data-aos-duration="1000">
                         <div class="categories-images">
                             <span class="glyphicon glyphicon-time" style="font-size: 100px" aria-hidden="true"></span>
                         </div>
                         <h3>Save your time</h3>
                         <p class="lead">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Est, debitis.</p>
                     </div>
-                    <div class="col-lg-4 col-xs-12">
+                    <div class="col-lg-4 col-xs-12" data-aos="fade-down" data-aos-duration="1000">
                         <div class="categories-images">
                             <span class="glyphicon glyphicon-time" style="font-size: 100px" aria-hidden="true"></span>
                         </div>
                         <h3>Share documents</h3>
                         <p class="lead">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Est, debitis.</p>
                     </div>
-                    <div class="col-lg-4 col-xs-12">
+                    <div class="col-lg-4 col-xs-12" data-aos="fade-left" data-aos-duration="1000">
                         <div class="categories-images">
                             <span class="glyphicon glyphicon-time" style="font-size: 100px" aria-hidden="true"></span>
                         </div>
@@ -105,7 +108,7 @@
         <div class="section-body">
             <div class="container text-center">
                 <div class="row licence-container">
-                    <div class="col-lg-5 documents-details">
+                    <div class="col-lg-5 documents-details" data-aos="fade-up-right" data-aos-duration="1000">
                         <div class="header">
                             <h3>Maths & Informatics Licence</h3>
                         </div>
@@ -122,7 +125,7 @@
                         </div>
                     </div>
                     <div class="col-lg-1"></div>
-                    <div class="col-lg-6 documents-table">
+                    <div class="col-lg-6 documents-table" data-aos="fade-up-left" data-aos-duration="1000">
                         <div class="header">
                             <div class="row">
                                 <div class="col-lg-6 col-md-6 col-sm-12">
@@ -161,6 +164,10 @@
     <!-- Contribution Section End -->
     <script src="js/jquery-1.12.1.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script src="js/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
     <script src="js/modulesData.js"></script>
     <script src="js/plugins.js"></script>
 </body>

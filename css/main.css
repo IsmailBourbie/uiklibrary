@@ -24,8 +24,9 @@ body, html{
 }
 .navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:focus,
 .navbar-default .navbar-nav>.open>a:hover {
-    color: #fff;
-    background-color: #FF5E3E;
+    color: #21242c;
+    background-color: #fccc3a;
+    font-weight: normal;
 }
 .navbar-default .navbar-toggle .icon-bar {
     background-color: #fff;   

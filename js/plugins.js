@@ -19,21 +19,28 @@ $(document).ready(function(){
     });
 
     // fill the licence table with data onload page
-    fillTable(1, 0);
+    fillTable(1);
 
     // Onchange semester 
-    $('.semester-btn').click(function() {
+    $('.licence-container .semester-btn').click(function() {
         let selectedSemester = $(this).attr('data-semester'),
             selectedYear = $('select').val();
-        $('.semester-btn').removeClass('selected');
+        $('.licence-container .semester-btn').removeClass('selected');
         $(this).addClass('selected');
 
         fillTable(selectedYear, selectedSemester);
     });
-        
+    
+
+    // onchange Licence year
+    $(".licence-container select#select-level").change(function(){
+        $('.licence-container .semester-btn:eq(0)').click();
+        let selectedYear = $(this).val();
+        fillTable(selectedYear);
+    });
     // helper function
 
-    function fillTable(year, semester) {
+    function fillTable(year, semester = 0) {
         let tableBody = $(".documents-table table tbody"),
         dataLicence = getLicenceSemester(year, semester);
 

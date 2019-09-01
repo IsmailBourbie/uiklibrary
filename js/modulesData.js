@@ -60,7 +60,7 @@ const LICENCE = {
                 "tp": false,
             }
         ],
-        [ // Semester 01
+        [ // Semester 02
             {
                 "url": "#",
                 "name": "Algorithms 02",
@@ -119,7 +119,59 @@ const LICENCE = {
             }
         ]
     ],
-    2: [],
+    2: [
+        [ // Semester 01
+            {
+                "url": "#",
+                "name": "Théories Des Graphs",
+                "course": true,
+                "td": true,
+                "tp": false,
+            },
+            {
+                "url": "#",
+                "name": "Génie Logiciel 01",
+                "course": true,
+                "td": true,
+                "tp": false,
+            },
+            {
+                "url": "#",
+                "name": "Systéme D'exploitaion",
+                "course": true,
+                "td": true,
+                "tp": true,
+            },
+            {
+                "url": "#",
+                "name": "Base De Donnée",
+                "course": true,
+                "td": true,
+                "tp": false,
+            },
+            {
+                "url": "#",
+                "name": "Développement D'applications Web",
+                "course": true,
+                "td": false,
+                "tp": true,
+            },
+            {
+                "url": "#",
+                "name": "Réseaux De Communication",
+                "course": true,
+                "td": true,
+                "tp": true,
+            },
+            {
+                "url": "#",
+                "name": "Anglais",
+                "course": true,
+                "td": false,
+                "tp": false,
+            }
+        ],
+    ],
     3: []    
 },
     MASTER = {
