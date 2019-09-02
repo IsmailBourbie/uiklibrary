@@ -73,9 +73,6 @@ section.home-cover {
 }
 section.home-cover .overlay {
     background: rgba(44, 129, 130, .6);
-    position: absolute;
-    width: 100%;
-    height: 100%;
 }
 section.home-cover .cover-description {
     position: absolute;
@@ -97,7 +94,6 @@ section.home-cover .cover-description p {
 /* Documents section Start */
 section.documents {
     background-color: #fafbfc;
-    padding: 10px;
     border: 1px solid #efefef;
 }
 
@@ -212,7 +208,27 @@ section.documents .documents-table table tbody {
 section.documents .documents-table table tbody tr:hover {
     cursor: pointer;
 }
+section.documents .extrenal-resources {
+    background-image: url(../img/extrenal-resources.jpg);
+    background-size: cover;
+    height: 420px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    margin: 90px auto;
+    position: relative;
+    color: #fff;
+}
+section.documents .extrenal-resources .overlay {
+    background: rgba(0, 0, 0, 0.6);
+}
 
+section.documents .extrenal-resources .extrenal-resources-description {
+    position: relative;
+    width: 60%;
+    margin: auto;
+    padding: 140px 0;
+    text-align: left;
+}
 /* Documents section end */
 
 /* Why Tresor section start */
@@ -281,8 +297,14 @@ section.why-tresor .section-body p {
 .false-sign {
     color: #F52012;
 }
+.overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%
+}
 button:focus, select:focus,
 button:active, select:active{
     outline: none;
 }
+
 /* Framework end */
