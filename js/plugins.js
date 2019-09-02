@@ -1,7 +1,7 @@
 $(document).ready(function(){
 
     // on reload page check the scroll
-    if($(window).scrollTop() >= 100) {
+    if($(window).scrollTop() >= 470) {
         $("nav.navbar").addClass("navbar-scrolled");
     } else {            
         $("nav.navbar").removeClass("navbar-scrolled");
@@ -10,8 +10,9 @@ $(document).ready(function(){
 
     // On scroll show the nav bar
     $(window).on('scroll', function() {
+        console.log($(this).scrollTop());
         let navbarElement = $("nav.navbar");
-        if($(this).scrollTop() >= 100) {
+        if($(this).scrollTop() >= 470) {
             navbarElement.addClass("navbar-scrolled");
         } else {
             navbarElement.removeClass("navbar-scrolled");
