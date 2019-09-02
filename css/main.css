@@ -71,7 +71,10 @@ body, html{
 
 
 /* Cover page start */
+section {
+    overflow: hidden;
 
+}
 section.home-cover {
     background-image: url(../img/cover.jpg);
     background-size: cover;
