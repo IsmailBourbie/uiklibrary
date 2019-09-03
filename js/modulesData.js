@@ -175,30 +175,150 @@ const LICENCE = {
     3: []    
 },
     MASTER = {
-        "GL" : {
-            1: [],
-            2: [
-                {
-                    "url": "#",
-                    "name": "Specification et conception des logiciels",
-                    "course": true,
-                    "td": true,
-                    "tp": false,
-                },
-                {
-                    "url": "#",
-                    "name": "Validation formelle des systemes informtique",
-                    "course": true,
-                    "td": true,
-                    "tp": true,
-                }
+        "SE" : {
+            1: [
+                [
+                    {
+                        "url": "#",
+                        "name": "BDA et DataMining",
+                        "course": true,
+                        "td": true,
+                        "tp": true,
+                    },
+                    {
+                        "url": "#",
+                        "name": "Compléxité Algorithmique",
+                        "course": true,
+                        "td": true,
+                        "tp": true,
+                    },
+                    {
+                        "url": "#",
+                        "name": "Simulation Multi Agent.",
+                        "course": true,
+                        "td": true,
+                        "tp": true,
+                    },
+                    {
+                        "url": "#",
+                        "name": "Génie Logiciel.",
+                        "course": true,
+                        "td": true,
+                        "tp": false,
+                    },
+                    {
+                        "url": "#",
+                        "name": "Gestion de la qualité",
+                        "course": true,
+                        "td": true,
+                        "tp": false,
+                    },
+                    {
+                        "url": "#",
+                        "name": "Architecture et Administration de SGBD",
+                        "course": true,
+                        "td": true,
+                        "tp": false,
+                    },
+                    {
+                        "url": "#",
+                        "name": "Logique pour IA",
+                        "course": true,
+                        "td": true,
+                        "tp": false,
+                    },
+                    {
+                        "url": "#",
+                        "name": "Anglais",
+                        "course": true,
+                        "td": false,
+                        "tp": false,
+                    },
+                ],
+                [
+                    {
+                        "url": "#",
+                        "name": "Specification et conception des logiciels",
+                        "course": true,
+                        "td": true,
+                        "tp": false,
+                    },
+                    {
+                        "url": "#",
+                        "name": "Validation formelle des systemes informtique",
+                        "course": true,
+                        "td": true,
+                        "tp": true,
+                    },
+                    {
+                        "url": "#",
+                        "name": "Architecture et Dev Logiciels",
+                        "course": true,
+                        "td": false,
+                        "tp": true,
+                    },
+                    {
+                        "url": "#",
+                        "name": "Construction des App Réparties",
+                        "course": true,
+                        "td": false,
+                        "tp": true,
+                    },
+                    {
+                        "url": "#",
+                        "name": "Fondement de l'intelligence Artificielle",
+                        "course": true,
+                        "td": true,
+                        "tp": false,
+                    },
+                    {
+                        "url": "#",
+                        "name": "Mathématiques Appliquées",
+                        "course": true,
+                        "td": true,
+                        "tp": false,
+                    },
+                    {
+                        "url": "#",
+                        "name": "Programmation Web",
+                        "course": true,
+                        "td": false,
+                        "tp": true,
+                    },
+                    {
+                        "url": "#",
+                        "name": "Sécurité Informatique.",
+                        "course": true,
+                        "td": false,
+                        "tp": true,
+                    },
+                    {
+                        "url": "#",
+                        "name": "Anglais 2",
+                        "course": true,
+                        "td": false,
+                        "tp": false,
+                    }
+                ]
             ],
-            3: [],
-            4: [],
+            2: [                
+            ],
+        },
+        "NT": {
+            1: [],
+            2: []
+        },
+        "CS": {
+            1: [],
+            2: []
         }
-    };        
+    };       
 
 
 function getLicenceSemester(year, semester) {
     return LICENCE[year][semester];
+}
+
+function getMasterSemester(speciality, year, semester) {
+    return MASTER[speciality][year][semester];
 }

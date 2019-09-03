@@ -158,7 +158,8 @@ section.documents .section-body .row .documents-details .footer select{
     padding: 10px;
 }
 
-section.documents .section-body .row .documents-details .footer select option{
+section.documents .section-body .row .documents-details .footer select option,
+section.documents .section-body .row .documents-details .footer select optgroup{
     background-color: #ffffff;
     color: #21242c;    
 }

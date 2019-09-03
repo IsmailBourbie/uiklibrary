@@ -10,7 +10,6 @@ $(document).ready(function(){
 
     // On scroll show the nav bar
     $(window).on('scroll', function() {
-        console.log($(this).scrollTop());
         let navbarElement = $("nav.navbar");
         if($(this).scrollTop() >= 470) {
             navbarElement.addClass("navbar-scrolled");
@@ -20,16 +19,27 @@ $(document).ready(function(){
     });
 
     // fill the licence table with data onload page
-    fillTable(1);
+    fillAllTables(1);
 
-    // Onchange semester 
+    // Onchange licence semester 
     $('.licence-container .semester-btn').click(function() {
         let selectedSemester = $(this).attr('data-semester'),
-            selectedYear = $('select').val();
+            selectedYear = $('.licence-container select').val();
         $('.licence-container .semester-btn').removeClass('selected');
         $(this).addClass('selected');
 
-        fillTable(selectedYear, selectedSemester);
+        fillLicenceTable(selectedYear, selectedSemester);
+    });
+
+    // Onchange master semester 
+    $('.master-container .semester-btn').click(function() {
+        let selectedSemester = $(this).attr('data-semester'),
+            selectedYear = $('.master-container select').val(),
+            selectedSpeciality = $('.master-container select option:selected').closest('optgroup').attr('data-speciality');
+        $('.master-container .semester-btn').removeClass('selected');
+        $(this).addClass('selected');
+
+        fillMasterTable(selectedYear, selectedSpeciality, selectedSemester);
     });
     
 
@@ -37,12 +47,20 @@ $(document).ready(function(){
     $(".licence-container select#select-level").change(function(){
         $('.licence-container .semester-btn:eq(0)').click();
         let selectedYear = $(this).val();
-        fillTable(selectedYear);
+        fillLicenceTable(selectedYear);
+    });
+
+    // onchange Master year
+    $(".master-container select#select-level").change(function(){
+        $('.master-container .semester-btn:eq(0)').click();
+        let selectedYear = $(this).val(),
+        selectedSpeciality = $('.master-container select option:selected').closest('optgroup').attr('data-speciality');
+        fillMasterTable(selectedYear, selectedSpeciality);
     });
     // helper function
 
-    function fillTable(year, semester = 0) {
-        let tableBody = $(".documents-table table tbody"),
+    function fillLicenceTable(year, semester = 0) {
+        let tableBody = $(".licence-container .documents-table table tbody"),
         dataLicence = getLicenceSemester(year, semester);
 
         tableBody.empty();
@@ -52,6 +70,22 @@ $(document).ready(function(){
         }
     }
 
+    
+    function fillMasterTable(year, speciality = "SE", semester = 0) {
+        let tableBody = $(".master-container .documents-table table tbody"),
+        dataMaster = getMasterSemester(speciality, year, semester);
+
+        tableBody.empty();
+
+        for(let i in dataMaster) {
+            tableBody.append(createTableRow(dataMaster[i]));
+        }
+    }
+
+    function fillAllTables (year) {
+        fillLicenceTable(year);
+        fillMasterTable(year);
+    }
     // render an row of table
     function createTableRow(object) {
         let tr = '<tr data-hred="' + object.url + '">'
