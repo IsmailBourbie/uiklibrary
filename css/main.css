@@ -264,6 +264,21 @@ section.documents .extrenal-resources .extrenal-resources-description a:hover {
 
 /* Why Tresor section start */
 
+section.why-uik-library .section-body .categories-images {    
+    background-size: auto 140px;
+    min-height: 136px;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+section.why-uik-library .section-body .save-time .categories-images {
+    background-image: url(https://static.skillshare.com/assets/images/homepage/how-it-works/reminders.png);
+}
+
+section.why-uik-library .section-body  .share-docs .categories-images {
+    background-image: url(https://static.skillshare.com/assets/images/homepage/how-it-works/community.png);
+}
+
 section.why-uik-library .section-body h3 {
     font-size: 30px;
     color: #21242c;
