@@ -257,7 +257,8 @@ section.documents .extrenal-resources .extrenal-resources-description a {
     letter-spacing: .1em;
 }
 
-section.documents .extrenal-resources .extrenal-resources-description a:hover {
+section.documents .extrenal-resources .extrenal-resources-description a:hover,
+section.contribution .section-body .container > div.row .contribution-button a:hover {
     opacity: .9;
 }
 /* Documents section end */
@@ -294,6 +295,49 @@ section.why-uik-library .section-body p {
 }
 
 /* Why UIK-Library section End */
+
+/* Contribution section start */
+section.contribution .section-body .container > div.row {
+    width: 90%;
+    margin: auto;
+    border-radius: 10px;
+    background-color: #f3f8fe;
+    overflow: hidden;
+}
+section.contribution .section-body .container > div.row .contribution-img {
+    background-image: url(../img/contribution.jpg);
+    height: 170px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+section.contribution .section-body .container > div.row .contribution-main {
+    text-align: left;
+    height: 170px;
+    padding: 34px;
+}
+section.contribution .section-body .container > div.row .contribution-main h3,
+section.contribution .section-body .container > div.row .contribution-main p {
+    color: #525c65;
+}
+section.contribution .section-body .container > div.row .contribution-main p {
+    font-size: 18px;
+}
+section.contribution .section-body .container > div.row .contribution-button {
+    padding: 74px;
+}
+section.contribution .section-body .container > div.row .contribution-button a {
+    border: 1px solid #07b1b1;
+    text-decoration: none;
+    background: #00CCCC;
+    color: #ffffff;
+    padding: 12px 30px;
+    box-shadow: 8px 10px 20px 0px rgba(46, 61, 73, 0.24);
+    border-radius: 5px;
+    font-size: 16px;
+    letter-spacing: .1em;
+}
+/* Contribution section End */
 
 
 /* Responsive design start */
