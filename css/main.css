@@ -262,7 +262,7 @@ section.documents .extrenal-resources .extrenal-resources-description a:hover {
 }
 /* Documents section end */
 
-/* Why Tresor section start */
+/* Why UIK-Library section start */
 
 section.why-uik-library .section-body .categories-images {    
     background-size: auto 140px;
@@ -272,13 +272,16 @@ section.why-uik-library .section-body .categories-images {
 }
 
 section.why-uik-library .section-body .save-time .categories-images {
-    background-image: url(https://static.skillshare.com/assets/images/homepage/how-it-works/reminders.png);
+    background-image: url(../img/save_time.png);
 }
 
 section.why-uik-library .section-body  .share-docs .categories-images {
-    background-image: url(https://static.skillshare.com/assets/images/homepage/how-it-works/community.png);
+    background-image: url(../img/share.png);
 }
 
+section.why-uik-library .section-body  .learn-from-home .categories-images {
+    background-image: url(../img/learn_from_home.png);
+}
 section.why-uik-library .section-body h3 {
     font-size: 30px;
     color: #21242c;
@@ -290,7 +293,7 @@ section.why-uik-library .section-body p {
     font-size: 18px;
 }
 
-/* Why Tresor section End */
+/* Why UIK-Library section End */
 
 
 /* Responsive design start */
