@@ -18,6 +18,9 @@ $(document).ready(function(){
         }
     });
 
+    // get the current year
+    $('#currentYear').text(new Date().getFullYear());
+
     // fill the licence table with data onload page
     fillAllTables(1);
 

@@ -71,7 +71,7 @@ body, html{
 
 
 /* Cover page start */
-section {
+section, footer {
     overflow: hidden;
 
 }
@@ -104,7 +104,7 @@ section.home-cover .cover-description p {
 
 /* Documents section Start */
 section.documents {
-    background-color: #fafbfc;
+    background-color: rgba(1, 201, 201, 0.05);
     border: 1px solid #efefef;
 }
 
@@ -301,7 +301,7 @@ section.contribution .section-body .container > div.row {
     width: 90%;
     margin: auto;
     border-radius: 10px;
-    background-color: #f3f8fe;
+    background-color: rgba(1, 201, 201, 0.05);
     overflow: hidden;
 }
 section.contribution .section-body .container > div.row .contribution-img {
@@ -339,7 +339,24 @@ section.contribution .section-body .container > div.row .contribution-button a {
 }
 /* Contribution section End */
 
-
+/* Footer start */
+footer {
+    width: 85%;
+    margin: 10px auto 50px;
+    padding: 10px 20px;
+    border-top: 1px solid #dbe2e8;
+}
+footer .fmi-link {
+    text-align: right;
+}
+footer a, footer .copyright {
+    color: #656868;
+}
+footer a:hover {
+    text-decoration: none;
+    color: #393b41;
+}
+/* Footer end */
 /* Responsive design start */
 
 @media (max-width: 768px) {
@@ -359,7 +376,9 @@ section.contribution .section-body .container > div.row .contribution-button a {
     .navbar-default .navbar-nav>li>a {
         color: #000000;
     }
-        
+    .navbar-default .navbar-nav>li>a:focus, .navbar-default .in .navbar-nav>li>a:hover {
+        color: #525c65;
+    }       
 }
 
 
