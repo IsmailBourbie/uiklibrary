@@ -83,7 +83,7 @@ section.home-cover {
     background-position: bottom center;
 }
 section.home-cover .overlay {
-    background: rgba(44, 129, 130, .6);
+    background: linear-gradient(to right, rgba(0, 0, 0, .7) 0%, rgba(67, 67, 67, .7) 51%, rgba(0, 0, 0, .7) 100%);
 }
 section.home-cover .cover-description {
     position: absolute;
