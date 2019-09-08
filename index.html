@@ -28,22 +28,22 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="#">UIK-LIBRARY</a>
+                <a class="navbar-brand" href="index.html">UIK-LIBRARY</a>
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Contribution</a></li>
+                    <li><a href="#home" class="scrollTo">Home</a></li>
+                    <li><a href="#contribution" class="scrollTo">Contribution</a></li>
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
                             aria-expanded="false">Documents <span class="caret"></span></a>
                         <ul class="dropdown-menu">
-                            <li><a href="#">Licence</a></li>
-                            <li><a href="#">Master</a></li>
+                            <li><a href="#licence" class="scrollTo">Licence</a></li>
+                            <li><a href="#master" class="scrollTo">Master</a></li>
                             <li role="separator" class="divider"></li>
-                            <li><a href="#">Other Documents</a></li>
+                            <li><a href="#other-docs" class="scrollTo">Other Documents</a></li>
                         </ul>
                     </li>
                 </ul>
@@ -53,7 +53,7 @@
     <!-- Navbar End -->
 
     <!-- Image cover Start -->
-    <section class="home-cover">
+    <section id="home" class="home-cover">
         <div class="overlay"></div>
         <div class="cover-description">
             <h1>UIK-LIBRARY</h1>
@@ -95,7 +95,7 @@
 
 
     <!-- Documents Section Start -->
-    <section class="documents">
+    <section id="licence" class="documents">
         <div class="section-title text-center">
             <h2>Browse Our Documents</h2>
         </div>
@@ -151,6 +151,7 @@
                         </div>
                     </div>
                 </div>
+                <div id="other-docs"></div>
                 <div class="extrenal-resources" data-aos="zoom-in" data-aos-duration="1000">
                     <div class="overlay"></div>
                     <div class="extrenal-resources-description">
@@ -160,7 +161,7 @@
                         <a href="#">Explore Files</a>
                     </div>                    
                 </div>
-                <div class="container">
+                <div id="master" class="container">
                     <div class="row master-container">
                         <div class="col-lg-6 documents-table" data-aos="fade-down-right" data-aos-duration="1000">
                             <div class="header">
@@ -226,7 +227,7 @@
     <!-- Documents Section End -->
 
     <!-- Contribution Section Start -->
-    <section class="contribution">
+    <section id="contribution" class="contribution">
         <div class="section-title text-center">
             <h2>Contribution</h2>
         </div>

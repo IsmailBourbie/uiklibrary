@@ -18,6 +18,17 @@ $(document).ready(function(){
         }
     });
 
+    // Animate scroll on click link
+
+    $('.scrollTo').click(function(e) {
+        e.preventDefault();
+        let href = $(this).attr('href');
+
+        $('html, body').animate({
+            scrollTop: $(href).offset().top
+        }, 1000);
+    });
+
     // get the current year
     $('#currentYear').text(new Date().getFullYear());
 

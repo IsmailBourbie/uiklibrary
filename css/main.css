@@ -164,6 +164,10 @@ section.documents .section-body .row .documents-details .footer select optgroup{
     color: #21242c;    
 }
 
+section.documents .section-body #master {
+    padding-top: 90px;
+}
+
 section.documents .documents-table{
     padding: 20px 10px;
     background-color: #ffffff;
@@ -226,7 +230,7 @@ section.documents .extrenal-resources {
     height: 420px;
     background-position: center center;
     background-repeat: no-repeat;
-    margin: 90px auto;
+    margin: 90px auto 0;
     position: relative;
     color: #fff;
 }
