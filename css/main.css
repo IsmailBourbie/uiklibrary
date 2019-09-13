@@ -42,15 +42,23 @@ body, html{
     background-color: #fff;   
 }
 
+.navbar-scrolled .navbar-toggle .icon-bar {
+    background-color: #000000;
+}
+
 .navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
     background-color: #FF5E3E;
+    border-color: #FF5E3E;
+}
+.navbar-scrolled .navbar-toggle:focus .icon-bar, .navbar-scrolled .navbar-toggle:hover .icon-bar {
+    background-color: #ffffff;
 }
 .navbar-default .navbar-toggle {
     border-color: #fff;
 }
 
-.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
-    border-color: #FF5E3E;
+.navbar-scrolled .navbar-toggle {
+    border-color: #000000;
 }
 
 
@@ -382,7 +390,10 @@ footer a:hover {
     }
     .navbar-default .navbar-nav>li>a:focus, .navbar-default .in .navbar-nav>li>a:hover {
         color: #525c65;
-    }       
+    }
+    footer {
+        width: 95%;
+    }
 }
 
 
